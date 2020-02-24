@@ -1,0 +1,234 @@
+/* Space out content a bit */
+body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.bor-disp {
+    border-bottom: 1px solid black;
+}
+
+.b-rad {
+    border-radius: 4px;
+}
+
+.new-message {
+    border: 1px solid rem;
+    border-radius: 4px;
+}
+
+.new-message,
+.envelope-span {
+    margin-top: -0.4rem;
+}
+
+.message-body {
+    min-height: 50vh;
+    border: 2px solid #18BC9C;
+    padding: 10px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.website-thing {
+    display: none !important;
+}
+
+/* Custom page header */
+.header {
+    padding-bottom: 1rem;
+    border-bottom: 0.05rem solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-bottom: 0;
+    line-height: 3rem;
+    margin-top: -10px;
+}
+
+.modal {
+    top: initial !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 1.5rem;
+    color: #777;
+    border-top: 0.05rem solid #e5e5e5;
+    clear: both;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+    .container {
+        max-width: 46rem;
+    }
+}
+
+.container-narrow>hr {
+    margin: 2rem 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 0.05rem solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 3rem 0;
+}
+
+.marketing p+h4 {
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 380px) {
+    .header {
+        padding-right: 0 !important;
+        padding-left: 0.5rem !important;
+    }
+
+    .container ul.nav {
+        float: left !important;
+    }
+
+    .container ul li.nav-item {
+        padding-left: 0.2rem !important;
+        padding-right: 0.2rem !important;
+    }
+
+    .container ul li.nav-item:first-child .px-3 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .container .jumbotron h3.display-3 {
+        font-size: 60px !important;
+    }
+
+    .container .jumbotron form input {
+        font-size: 20px !important;
+        padding: 0.5rem 1rem;
+    }
+
+    .posts h1.latest {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #job-single-title h2 {
+        font-size: 2rem;
+        margin: 1rem 0 !important;
+    }
+
+    #job-single-title a {
+        font-size: 0.8rem;
+    }
+
+    #send-header {
+        padding-left: 1rem;
+    }
+
+    #prefe-header,
+    #edit-header,
+    #create-header {
+        margin: 0.8rem 0 1.2rem 0;
+        font-size: 2.4rem !important;
+    }
+
+    .my-mess {
+        font-size: 1.8rem !important;
+    }
+
+    #dash-job {
+        margin: 0 1rem !important;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #category-detail {
+        display: inline-block;
+    }
+
+    #job-single-title {
+        padding: 0 0.5rem !important;
+    }
+
+    #job-single-title h2 {
+        margin-bottom: 0.4rem !important;
+    }
+
+    #job-single-title a {
+        display: none;
+    }
+
+    #msg-sm {
+        display: block !important;
+    }
+
+    #sender-receiver {
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #dash-content {
+        margin-left: 0.8rem;
+    }
+
+    .my-mess {
+        margin-bottom: 0 !important;
+        padding-bottom: 0.2rem !important;
+    }
+
+    #create-post-btn {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    #table-disp h4 {
+        font-size: 1.2rem !important;
+    }
+
+    #table-disp a {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 2rem;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
