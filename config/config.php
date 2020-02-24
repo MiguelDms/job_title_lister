@@ -6,6 +6,7 @@
 define('DB_USER', "root");
 define('DB_PASSWORD', '');
 define('DB_NAME', 'job_lister'); */
+
 define('BASEURL', $_SERVER['DOCUMENT_ROOT']. '/Job_title_lister'); 
 
 define('DB_USER', 'bbf7143e7c67ac');
