@@ -12,7 +12,7 @@ require_once 'config.php';
 
 // Include helpers
 
-require_once  BASEURL . '/helpers/system_helper.php';
+require_once  BASEURL . 'helpers/system_helper.php';
 
 // Autoloader
 
