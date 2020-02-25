@@ -3,13 +3,13 @@
 include_once 'config/init.php';
 
 
-$message = new Message;
+/* $message = new Message;
 $user = new User;
-$template = new Template('templates/message-view.php');
+$template = new Template('templates/message-view.php'); */
 
-/* $message = new lib\Message;
+$message = new lib\Message;
 $user = new lib\User;
-$template = new lib\Template('templates/message-view.php'); */
+$template = new lib\Template('templates/message-view.php');
 
 
 $user_id = isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : null;

@@ -3,14 +3,14 @@
 include_once 'config/init.php';
 
 
-$job = new Job;
+/* $job = new Job;
 $message = new Message;
 $user = new User;
-$template = new Template('templates/main-dash.php');
-/* $job = new lib\Job;
+$template = new Template('templates/main-dash.php'); */
+$job = new lib\Job;
 $message = new lib\Message;
 $user = new lib\User;
-$template = new lib\Template('templates/main-dash.php'); */
+$template = new lib\Template('templates/main-dash.php');
 
 
 $user_id = isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : null;

@@ -2,8 +2,8 @@
 
 include_once 'config/init.php';
 
-$job = new Job;
-/* $job = new lib\Job; */
+/* $job = new Job; */
+$job = new lib\Job;
 
 //delete job 
 
@@ -16,7 +16,7 @@ if (isset($_POST['del_id'])) {
     }
 }
 
-$template = new Template('templates/job-single.php');
+$template = new lib\Template('templates/job-single.php');
 
 
 // get job id 

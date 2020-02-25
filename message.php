@@ -2,13 +2,13 @@
 
 include_once 'config/init.php';
 
-$message = new Message;
+/* $message = new Message;
 $user = new User;
-$template = new Template('templates/message-user.php');
-/* 
+$template = new Template('templates/message-user.php') */;
+
 $message = new lib\Message;
 $user = new lib\User;
-$template = new lib\Template('templates/message-user.php'); */
+$template = new lib\Template('templates/message-user.php');
 
 $logged = isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : null;
 $to_id = isset($_GET['id']) ? $_GET['id'] : null;

@@ -2,12 +2,12 @@
 
 include_once 'config/init.php';
 
-/* $job = new lib\Job;
+$job = new lib\Job;
 $user = new lib\User;
-$template = new lib\Template('templates/apresentacao-user.php'); */
-$job = new Job;
+$template = new lib\Template('templates/apresentacao-user.php');
+/* $job = new Job;
 $user = new User;
-$template = new Template('templates/apresentacao-user.php');
+$template = new Template('templates/apresentacao-user.php'); */
 
 
 $user_id = isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : null;

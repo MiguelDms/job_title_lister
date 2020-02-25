@@ -1,6 +1,6 @@
 <?php 
 
-/* namespace lib; */
+ namespace lib; 
 
 class Message{
     private $db;
