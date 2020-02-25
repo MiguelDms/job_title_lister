@@ -19,15 +19,15 @@ require_once  BASEURL . '/helpers/system_helper.php';
 spl_autoload_register('myAutoLoaderPerson');
 
     function myAutoLoaderPerson($className) {
-        $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+       /*  $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
         if (strpos($url, "includes") !== false) {
            $path = '../classes/';
         } else {
             $path = BASEURL . '/classes/';
         }
-        $extension = '.class.php';
-        $fullPath = $path . $className . $extension;
+        $extension = '.class.php'; */
+        $fullPath = require_once __DIR__ . "/../classes/$className.class.php";
 
         
 
