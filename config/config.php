@@ -7,11 +7,13 @@ define('DB_USER', "root");
 define('DB_PASSWORD', '');
 define('DB_NAME', 'job_lister'); */
 
-define('BASEURL', $_SERVER['DOCUMENT_ROOT']); 
+define('BASEURL', realpath(__DIR__ . "/../../"));
 
-define('DB_USER', 'bbf7143e7c67ac');
-define('DB_PASSWORD', '90906716');
-define('DB_HOST', 'us-cdbr-iron-east-04.cleardb.net');
-define('DB_NAME', 'heroku_d523362820819f8'); 
+define('DB_USER', 'b3fb87a5144f9e');
+define('DB_PASSWORD', 'f0c8d87c');
+define('DB_HOST', 'eu-cdbr-west-02.cleardb.net');
+define('DB_NAME', 'heroku_f656533b7991643'); 
 
 define('SITE_TITLE', 'JoBLister');
+
+
