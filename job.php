@@ -16,7 +16,7 @@ if (isset($_POST['del_id'])) {
     }
 }
 
-$template = new lib\Template('templates/job-single.php');
+$template = new Template('templates/job-single.php');
 
 
 // get job id 
