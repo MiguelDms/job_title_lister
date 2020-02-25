@@ -27,7 +27,7 @@ spl_autoload_register('myAutoLoaderPerson');
             $path = BASEURL . '/classes/';
         }
         $extension = '.class.php'; */
-        require_once BASEURL . "/classes/$className.class.php";
+        require_once '../classes/' .$className . '.class.php';
 
         
 
