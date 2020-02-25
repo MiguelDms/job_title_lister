@@ -42,7 +42,7 @@ include 'includes/header.php';
       <?php endforeach; ?>
       <div class="col-12 text-center mt-3">
         <?php for ($i = 1; $i <= $nm_paginas; $i++) {
-          echo '<a href="index.php?page=' . $i . '" class="' . ((isset($_GET['page']) && $_GET['page'] == $i )? 'bor-disp' : '') . '"> ' . $i . ' </a>'; } ?> 
+          echo '<a href="index.php?page=' . $i . '" class="m-2 ' . ((isset($_GET['page']) && $_GET['page'] == $i )? 'bor-disp' : '') . '"> ' . $i . ' </a>'; } ?> 
         </div>
       </div>
 <?php

@@ -3,9 +3,13 @@
 
 include 'includes/header.php';
 ?>  
+
+    <?php if(isset($_POST['submit'])): ?>
     <div id="error-message" class="text-center my-4">
-        <?php echo ((isset($_POST['submit']))? $error : '') ?>
+        <?php echo $error;?>
     </div>
+    <?php endif; ?>
+
     <div class="row justify-content-between">
     <h2 class="page-header" id="send-header">Enviar Mensagem</h2>
         <div class="flex-column row mr-5" id="sender-receiver">

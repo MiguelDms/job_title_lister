@@ -71,7 +71,7 @@ include 'includes/header.php';
             
             <div class="col-12 text-center mt-3">
                 <?php for ($i = 1; $i <= $nm_paginas; $i++) {
-                echo '<a href="dashboard.php?posts=1&page=' . $i . '" class="' . ((isset($_GET['page']) && $_GET['page'] == $i )? 'bor-disp' : '') . '"> ' . $i . ' </a>'; } ?> 
+                echo '<a href="dashboard.php?posts=1&page=' . $i . '" class="m-2 ' . ((isset($_GET['page']) && $_GET['page'] == $i )? 'bor-disp' : '') . '"> ' . $i . ' </a>'; } ?> 
             </div>
 
         <?php endif; ?>
