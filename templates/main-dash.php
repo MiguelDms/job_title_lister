@@ -58,10 +58,10 @@ include 'includes/header.php';
                     </div>
                     <div class="col-4 col-md-2 pr-0">
                     <div class="row flex-column">
-                        <a href="job.php?id=<?php echo $job->id;?>" class="btn btn-info float-right mb-1 py-1 px-2 align-self-end" style="width:60px">Ver</a>
+                        <a href="job.php?id=<?php echo $job->id;?>" class="btn btn-info float-right mb-1 py-1 px-2 align-self-end" style="width:65px">Ver</a>
                         <form action="job.php" style="display:inline;" method="POST">
                         <input type="hidden" name="del_id" value="<?php echo $job->id;?>">
-                        <input type="submit" class="btn btn-danger float-right mt-1 px-2" value="Apagar" style="width:60px">
+                        <input type="submit" class="btn btn-danger float-right mt-1 px-2" value="Apagar" style="width:65px">
                         </form>
                     </div>
                     </div>
@@ -71,7 +71,7 @@ include 'includes/header.php';
             
             <div class="col-12 text-center mt-3">
                 <?php for ($i = 1; $i <= $nm_paginas; $i++) {
-                echo '<a href="dashboard.php?posts=1&page=' . $i . '" class="m-2 ' . ((isset($_GET['page']) && $_GET['page'] == $i )? 'bor-disp' : '') . '"> ' . $i . ' </a>'; } ?> 
+                echo '<a href="dashboard.php?posts=1&page=' . $i . '" class="mr-2 ' . ((isset($_GET['page']) && $_GET['page'] == $i )? 'bor-disp' : '') . '"> ' . $i . ' </a>'; } ?> 
             </div>
 
         <?php endif; ?>
