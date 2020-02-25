@@ -12,7 +12,7 @@ require_once 'config.php';
 
 // Include helpers
 
-require_once  '/helpers/system_helper.php';
+require_once  '../helpers/system_helper.php';
 
 // Autoloader
 
@@ -24,7 +24,7 @@ spl_autoload_register('myAutoLoaderPerson');
         if (strpos($url, "includes") !== false) {
            $path = '../classes/';
         } else {
-            $path = '/classes/';
+            $path = '../classes/';
         }
         $extension = '.class.php';
         $fullPath = $path . $className . $extension;
