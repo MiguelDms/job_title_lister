@@ -1,7 +1,9 @@
 <?php 
 
-$user = new lib\User;
-$message = new lib\Message;
+/* $user = new lib\User;
+$message = new lib\Message; */
+$user = new User;
+$message = new Message;
 
 $logged = isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : null;
 

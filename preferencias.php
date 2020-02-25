@@ -3,9 +3,12 @@
 include_once 'config/init.php';
 
 
-$job = new lib\Job;
+$job = new Job;
+$user = new User;
+$template = new Template('templates/preferencias-main.php');
+/* $job = new lib\Job;
 $user = new lib\User;
-$template = new lib\Template('templates/preferencias-main.php');
+$template = new lib\Template('templates/preferencias-main.php'); */
 
 
 $user_id = isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : null;

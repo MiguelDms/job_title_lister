@@ -2,7 +2,8 @@
 
 include_once 'config/init.php';
 
-$job = new lib\Job;
+$job = new Job;
+/* $job = new lib\Job; */
 
 //delete job 
 

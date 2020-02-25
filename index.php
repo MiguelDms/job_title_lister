@@ -2,8 +2,10 @@
 
 include_once 'config/init.php';
 
-$job = new lib\Job;
-$template = new lib\Template('templates/frontpage.php');
+$job = new Job;
+$template = new Template('templates/frontpage.php');
+/* $job = new lib\Job;
+$template = new lib\Template('templates/frontpage.php'); */
 
 // get category id 
 $category = isset($_GET['category']) ? $_GET['category'] : null;

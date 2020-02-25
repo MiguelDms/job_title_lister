@@ -2,8 +2,10 @@
 
 include_once 'config/init.php';
 
-$job = new lib\Job;
-$template = new lib\Template('templates/job-edit.php');
+$job = new Job;
+$template = new Template('templates/job-edit.php');
+/* $job = new lib\Job;
+$template = new lib\Template('templates/job-edit.php'); */
 
 
 // get Id

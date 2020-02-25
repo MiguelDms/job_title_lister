@@ -2,8 +2,9 @@
 
 include_once 'config/init.php';
 
-$user = new lib\User;
-
+$user = new User;
+/* $user = new lib\User;
+ */
 
 $data = array();
 
