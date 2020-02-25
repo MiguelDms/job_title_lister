@@ -7,7 +7,7 @@ define('DB_USER', "root");
 define('DB_PASSWORD', '');
 define('DB_NAME', 'job_lister'); */
 
-define('BASEURL', realpath(__DIR__ . "/app"));
+define('BASEURL', realpath(__DIR__ . "/../"));
 
 define('DB_USER', 'b3fb87a5144f9e');
 define('DB_PASSWORD', 'f0c8d87c');
