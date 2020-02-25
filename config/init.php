@@ -24,7 +24,7 @@ spl_autoload_register('myAutoLoaderPerson');
         if (strpos($url, "includes") !== false) {
            $path = '../classes/';
         } else {
-            $path = BASEURL . '/classes\'';
+            $path = BASEURL . '/classes\\';
         }
         $extension = '.class.php';
         $fullPath = $path . $className . $extension;
