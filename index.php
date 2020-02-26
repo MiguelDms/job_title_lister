@@ -56,7 +56,7 @@ if ($category) {
     $template->jobs = $job->getByCategory($category, $sql);
    
 } else {
-    $template->title = 'Ultimo Empregos';
+    $template->title = 'Ultimos Empregos';
 
     // get jobs from db
     $template->jobs = $job->getAllJobs();

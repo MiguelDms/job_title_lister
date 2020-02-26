@@ -69,7 +69,7 @@ include 'includes/header.php';
                 
             <?php endforeach; ?>
             
-            <div class="col-12 text-center mt-3">
+            <div class="col-12 text-center mt-3 mb-2">
                 <?php for ($i = 1; $i <= $nm_paginas; $i++) {
                 echo '<a href="dashboard.php?posts=1&page=' . $i . '" class="mr-2 ' . ((isset($_GET['page']) && $_GET['page'] == $i )? 'bor-disp' : '') . '"> ' . $i . ' </a>'; } ?> 
             </div>

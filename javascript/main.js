@@ -27,6 +27,39 @@ function errorGone() {
 
 errorGone();
 
+let checkbox = document.querySelector('input[name="theme"]');
+let dark = document.cookie = "dark; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+let light = document.cookie = "light; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+
+if (checkbox !== null) {
+  checkbox.addEventListener('change', function () {
+    if (this.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  })
+}
+
+
+function colorChange() {
+  let body = document.querySelector("body");
+
+  let checked = document.querySelector("body > div > form > div:nth-child(1) > div > div > input[type=checkbox]");
+
+  if (changed == false) {
+
+    body.style.cssText = 'background-color: rgb(26, 18, 71); color: white;';
+    checked.status = 'checked';
+    changed = true;
+
+  } else {
+
+    body.style.cssText = 'background-color: rgb(255,255,255); color: black';
+    changed = false;
+  }
+}
+
 $("#login-form, #register1-form, #register2-form").on("submit", function (e) {
   let data = "";
   let url = "";

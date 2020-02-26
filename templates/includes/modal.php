@@ -102,15 +102,15 @@
         <form action="register.php" method="POST" class="form-group" id="register2-form">
           <div id="employee-inputs" style="display: none;">
           <div class="form-group">
-            <label for="">Primeiro Nome<span>*</span></label>
+            <label for="">Primeiro Nome<span class="text-danger">*</span></label>
             <input type="text" name="first_name" class="form-control">
             </div>
             <div class="form-group">
-            <label for="">Ultimo Nome<span>*</span></label>
+            <label for="">Ultimo Nome<span class="text-danger">*</span></label>
             <input type="text" name="last_name" class="form-control">
             </div>
             <div class="form-group">
-            <label for="">Username<span>*</span></label>
+            <label for="">Username<span class="text-danger">*</span></label>
             <input type="text" name="username" class="form-control">
             </div>
             <div class="form-group">
@@ -134,15 +134,15 @@
               <input type="text" name="contact_email" class="form-control">
             </div>
             <div class="form-group">
-            <label for="">Email de Registo<span>*</span></label>
+            <label for="">Email de Registo<span class="text-danger">*</span></label>
             <input type="email" name="email" class="form-control">
             </div>
             <div class="form-group">
-            <label for="">Password<span>*</span></label>
+            <label for="">Password<span class="text-danger">*</span></label>
             <input type="password" name="password" class="form-control">
             </div>
             <div class="form-group">
-            <label for="">Confirmar Password<span>*</span></label>
+            <label for="">Confirmar Password<span class="text-danger">*</span></label>
             <input type="password" name="password_confirm" value="" class="form-control">
             </div>
             <div class="form-group">

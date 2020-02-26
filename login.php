@@ -6,9 +6,14 @@ $user = new lib\User;
 /* $user = new User; */
 $data = array();
 
-
+ 
 
     parse_str($_POST['data'], $params);
+
+    if (empty($params)) {
+     header('Location: index.php');
+    }
+
     $email = $params['email'];
     $password = $params['password'];
     $website = $params['website'];

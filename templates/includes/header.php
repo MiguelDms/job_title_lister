@@ -6,7 +6,7 @@ include '../head.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +48,7 @@ include '../head.php';
 
             <?php if($logged): ?>
             <li class="nav-item">
-              <a class="nav-link px-1" href="dashboard.php?messages=1"><img src="Imagens/iconfinder_message_172503.svg" class="<?php echo (($message_single->checked == '0')? 'new-message' : '') ?>" height="20px" width="30px" alt="message icon"> <span class="sr-only">(current)</span><?php echo (($checked == true)? '<span class="text-danger font-weight-bolder envelope-span">*</span>' : '') ?></a>
+              <a class="nav-link px-1" href="dashboard.php?messages=1"><img src="Imagens/envelope.jpg" class="<?php echo (($message_single->checked == '0')? 'new-message' : '') ?>" height="14px" width="20px" alt="message icon"> <span class="sr-only">(current)</span><?php echo (($checked == true)? '<span class="text-danger font-weight-bolder envelope-span">*</span>' : '') ?></a>
             </li>
             <?php endif; ?>
 

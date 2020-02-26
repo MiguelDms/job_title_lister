@@ -10,6 +10,12 @@ $data = array();
 
 
     parse_str($_POST['data'], $params);
+
+    if (empty($params)) {
+      header('Location: index.php');
+     }
+ 
+
     $email = $params['email'];
     $password = $params['password'];
     $first_name = $params['first_name'];

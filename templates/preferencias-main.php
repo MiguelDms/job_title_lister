@@ -8,7 +8,17 @@ include 'includes/header.php';
     <form action="preferencias.php" method="POST">
         <?php if($check->is_employer === '1'): ?>
             <div class="form-group">
+                <div class="row px-3 justify-content-between">
                 <label for="">Empresa</label>
+                    <div class="row  align-content-start">
+                        <img src="Imagens/iconfinder_sun-symbol_110801.png" alt="" width="20px" height="20px">
+                        <label class="switch">
+                        <input type="checkbox" name="theme">
+                        <span class="slider round"></span>
+                        </label>
+                        <img src="Imagens/iconfinder_icon-ios7-moon-outline_211778.png" alt="" width="30px" height="30px" style="margin-top: -10px">
+                    </div>
+                </div>
                 <input type="text" class="form-control" name="company" value="<?php echo $check->company;?>">
             </div>
         <?php else: ?>

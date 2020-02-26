@@ -17,7 +17,7 @@ include 'includes/header.php';
     <small  class="d-block">Postado Por: <a href="apresentacao.php?id=<?php echo $job->user_id?>" ><?php echo $job->contact_user;?></a>  on <?php echo $job->post_date;?></small>
     <hr>
     <p class="lead"><?php echo $job->description;?></p>
-    <ul class="list-group">
+    <ul class="list-group" id="job-ul">
         <li class="list-group-item"><strong>Empresa: </strong><?php echo $job->compnay;?></li>
         <li class="list-group-item"><strong>Salário: </strong><?php echo $job->salary;?></li>
         <li class="list-group-item"><strong>Contacto: </strong><?php echo $job->contact_email;?></li>
