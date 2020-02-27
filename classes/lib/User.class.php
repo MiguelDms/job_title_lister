@@ -48,6 +48,7 @@ class User{
         employment_status = :employment_status,
         contact_email = :contact_email,
         show_email = :show_email,
+        theme = :theme,
         contact_name = :contact_name,
         company = :company,
         presentation = :presentation WHERE id = $id");
@@ -56,6 +57,7 @@ class User{
         $this->db->bind(':employment_status', $data['employment_status']);
         $this->db->bind(':contact_email', $data['contact_email']);
         $this->db->bind(':show_email', $data['show_email']);
+        $this->db->bind(':theme', $data['theme']);
         $this->db->bind(':contact_name', $data['contact_name']);
         $this->db->bind(':company', $data['company']);
         $this->db->bind(':presentation', $data['presentation']);

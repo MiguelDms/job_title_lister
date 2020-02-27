@@ -13,10 +13,11 @@ include 'includes/header.php';
                     <div class="row  align-content-start">
                         <img src="Imagens/iconfinder_sun-symbol_110801.png" alt="" width="20px" height="20px">
                         <label class="switch">
-                        <input type="checkbox" name="theme">
+                        
+                        <input type="checkbox" name="theme" onchange="colorChange();">
                         <span class="slider round"></span>
                         </label>
-                        <img src="Imagens/iconfinder_icon-ios7-moon-outline_211778.png" alt="" width="30px" height="30px" style="margin-top: -10px">
+                        <img src="Imagens/iconfinder_icon-ios7-moon-outline_211778.png" alt="" width="30px" height="30px" style="margin-top: -10px; margin-left: 1px">
                     </div>
                 </div>
                 <input type="text" class="form-control" name="company" value="<?php echo $check->company;?>">
@@ -57,6 +58,7 @@ include 'includes/header.php';
         
         <input type="submit" class="btn btn-success" value="Editar" name="submit">
     </form>
+
 
 <?php
 include 'includes/footer.php';

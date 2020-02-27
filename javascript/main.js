@@ -27,37 +27,52 @@ function errorGone() {
 
 errorGone();
 
-let checkbox = document.querySelector('input[name="theme"]');
-let dark = document.cookie = "dark; expires=Thu, 18 Dec 2013 12:00:00 UTC";
-let light = document.cookie = "light; expires=Thu, 18 Dec 2013 12:00:00 UTC";
 
-if (checkbox !== null) {
-  checkbox.addEventListener('change', function () {
-    if (this.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  })
-}
+
+//setting session storage 
+
+let checkbox = document.querySelector('input[name=theme]');
 
 
 function colorChange() {
-  let body = document.querySelector("body");
 
-  let checked = document.querySelector("body > div > form > div:nth-child(1) > div > div > input[type=checkbox]");
+  if (checkbox.checked) {
+    sessionStorage.clear();
+    sessionStorage.setItem('dark', 'dark');
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    sessionStorage.clear();
+    sessionStorage.setItem('light', 'light');
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
 
-  if (changed == false) {
 
-    body.style.cssText = 'background-color: rgb(26, 18, 71); color: white;';
-    checked.status = 'checked';
-    changed = true;
+}
+
+document.addEventListener("DOMContentLoaded", initTime);
+
+function initTime() {
+
+  let session = '';
+
+  if (sessionStorage.getItem('dark')) {
+    session = sessionStorage.getItem('dark');
+
+    if (checkbox != null) {
+      checkbox.checked = true;
+    }
+
 
   } else {
+    session = sessionStorage.getItem('light');
 
-    body.style.cssText = 'background-color: rgb(255,255,255); color: black';
-    changed = false;
+    if (checkbox != null) {
+      checkbox.checked = false;
+    }
+
   }
+
+  document.documentElement.setAttribute('data-theme', session);
 }
 
 $("#login-form, #register1-form, #register2-form").on("submit", function (e) {

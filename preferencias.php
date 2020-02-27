@@ -2,16 +2,17 @@
 
 include_once 'config/init.php';
 
-/* 
-$job = new Job;
-$user = new User;
-$template = new Template('templates/preferencias-main.php'); */
+
 $job = new lib\Job;
 $user = new lib\User;
 $template = new lib\Template('templates/preferencias-main.php');
 
 
 $user_id = isset($_SESSION['logged_in']) ? $_SESSION['logged_in'] : null;
+
+
+
+
 
 // check to see if user is logged in
 
@@ -26,6 +27,7 @@ if(isset($_POST['submit'])) {
     $data['employment_status'] = $_POST['employment_status'];
     $data['contact_email'] = $_POST['contact_email'];
     $data['show_email'] = $_POST['show_email'];
+    $data['theme'] = $_POST['theme'];
     $data['contact_name'] = $_POST['contact_name'];
     $data['company'] = $_POST['company'];
     $data['presentation'] = $_POST['presentation'];
