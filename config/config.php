@@ -12,10 +12,10 @@ define('BASEURL', $_SERVER['DOCUMENT_ROOT'] . '/Job_title_lister'); */
 
 define('BASEURL', $_SERVER['DOCUMENT_ROOT']); 
 
-define('DB_USER', 'b3fb87a5144f9e');
-define('DB_PASSWORD', 'f0c8d87c');
-define('DB_HOST', 'eu-cdbr-west-02.cleardb.net');
-define('DB_NAME', 'heroku_f656533b7991643'); 
+define('DB_USER', 'user_name');
+define('DB_PASSWORD', 'password');
+define('DB_HOST', 'host');
+define('DB_NAME', 'db_name'); 
 
 define('SITE_TITLE', 'JoBLister');
 
